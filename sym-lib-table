@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name final_schematic-eagle-import)(type Legacy)(uri ${KIPRJMOD}/final_schematic-eagle-import.lib)(options "")(descr ""))
+  (lib (name final_schematic-rescue)(type Legacy)(uri ${KIPRJMOD}/final_schematic-rescue.lib)(options "")(descr ""))
+)
