@@ -1363,7 +1363,7 @@ $EndComp
 Text GLabel 2800 3800 0    50   Input ~ 0
 V_supply
 Text GLabel 3350 3700 2    50   Input ~ 0
-3v3
+3V3
 Wire Wire Line
 	2800 3800 2950 3800
 Wire Wire Line
@@ -1378,4 +1378,12 @@ Text GLabel 6450 3150 2    50   Input ~ 0
 PB0
 Wire Wire Line
 	6450 3150 6250 3150
+Text GLabel 2800 3300 0    50   Input ~ 0
+3V3
+Text GLabel 3450 3300 2    50   Input ~ 0
+PB0
+Wire Wire Line
+	2800 3300 2900 3300
+Wire Wire Line
+	3300 3300 3450 3300
 $EndSCHEMATC

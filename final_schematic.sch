@@ -835,7 +835,7 @@ $EndComp
 Wire Wire Line
 	6750 3300 6750 3400
 Wire Wire Line
-	6450 3400 6450 3500
+	6450 3450 6450 3500
 Wire Wire Line
 	6750 3700 6750 3750
 Text GLabel 6850 3750 2    50   Input ~ 0
@@ -1087,7 +1087,7 @@ Wire Wire Line
 	5450 1050 5550 1050
 Text GLabel 6750 3300 2    50   Input ~ 0
 3V3
-Text GLabel 6450 3400 2    50   Input ~ 0
+Text GLabel 6450 3450 2    50   Input ~ 0
 3V3
 Text Notes 7450 7500 0    50   ~ 0
 Snow-WeAR Goggles Schematic
@@ -1152,7 +1152,7 @@ Wire Wire Line
 	1950 4150 1850 4150
 Text GLabel 1950 4550 2    50   Input ~ 0
 SWO
-Text GLabel 6450 3300 2    50   Input ~ 0
+Text GLabel 6450 3350 2    50   Input ~ 0
 SWO
 Wire Wire Line
 	6350 3450 6250 3450
@@ -1317,25 +1317,25 @@ DIO0
 Wire Wire Line
 	9950 2350 9850 2350
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 60374032
-P 3100 3300
-F 0 "SW?" H 3100 3585 50  0000 C CNN
-F 1 "SW_Push" H 3100 3494 50  0000 C CNN
-F 2 "" H 3100 3500 50  0001 C CNN
-F 3 "" H 3100 3500 50  0001 C CNN
-	1    3100 3300
+P 3250 3450
+F 0 "SW1" H 3250 3735 50  0000 C CNN
+F 1 "SW_Push" H 3250 3644 50  0000 C CNN
+F 2 "" H 3250 3650 50  0001 C CNN
+F 3 "" H 3250 3650 50  0001 C CNN
+	1    3250 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L schematic-eagle-import:SWITCH-SPDT-SMD-A S?
 U 1 1 60374331
-P 3050 3800
-F 0 "S?" H 3100 4101 59  0000 C CNN
-F 1 "SWITCH-SPDT-SMD-A" H 3100 3996 59  0000 C CNN
-F 2 "" H 3050 3800 50  0001 C CNN
-F 3 "" H 3050 3800 50  0001 C CNN
-	1    3050 3800
+P 3200 3950
+F 0 "S?" H 3250 4251 59  0000 C CNN
+F 1 "SWITCH-SPDT-SMD-A" H 3250 4146 59  0000 C CNN
+F 2 "" H 3200 3950 50  0001 C CNN
+F 3 "" H 3200 3950 50  0001 C CNN
+	1    3200 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1352,38 +1352,61 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6038CE54
-P 3300 3900
-F 0 "#PWR?" H 3300 3650 50  0001 C CNN
-F 1 "GND" H 3305 3727 50  0000 C CNN
-F 2 "" H 3300 3900 50  0001 C CNN
-F 3 "" H 3300 3900 50  0001 C CNN
-	1    3300 3900
+P 3450 4050
+F 0 "#PWR?" H 3450 3800 50  0001 C CNN
+F 1 "GND" H 3455 3877 50  0000 C CNN
+F 2 "" H 3450 4050 50  0001 C CNN
+F 3 "" H 3450 4050 50  0001 C CNN
+	1    3450 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 3800 0    50   Input ~ 0
+Text GLabel 2950 3950 0    50   Input ~ 0
 V_supply
-Text GLabel 3350 3700 2    50   Input ~ 0
+Text GLabel 3500 3850 2    50   Input ~ 0
 3V3
 Wire Wire Line
-	2800 3800 2950 3800
+	2950 3950 3100 3950
 Wire Wire Line
-	3250 3700 3350 3700
+	3400 3850 3500 3850
 Wire Wire Line
-	3300 3900 3250 3900
-Wire Wire Line
-	6450 3300 6350 3300
-Wire Wire Line
-	6350 3300 6350 3450
+	3450 4050 3400 4050
 Text GLabel 6450 3150 2    50   Input ~ 0
 PB0
 Wire Wire Line
 	6450 3150 6250 3150
-Text GLabel 2800 3300 0    50   Input ~ 0
+Text GLabel 2950 3450 0    50   Input ~ 0
 3V3
-Text GLabel 3450 3300 2    50   Input ~ 0
+Text GLabel 3600 3450 2    50   Input ~ 0
 PB0
 Wire Wire Line
-	2800 3300 2900 3300
+	2950 3450 3050 3450
 Wire Wire Line
-	3300 3300 3450 3300
+	3450 3450 3600 3450
+Text GLabel 6450 3250 2    50   Input ~ 0
+PB1
+Wire Wire Line
+	6350 3450 6350 3350
+Wire Wire Line
+	6350 3350 6450 3350
+Wire Wire Line
+	6450 3250 6250 3250
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6050A466
+P 3250 3050
+F 0 "SW2" H 3250 3335 50  0000 C CNN
+F 1 "SW_Push" H 3250 3244 50  0000 C CNN
+F 2 "" H 3250 3250 50  0001 C CNN
+F 3 "" H 3250 3250 50  0001 C CNN
+	1    3250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3050 3050 3050
+Wire Wire Line
+	3450 3050 3600 3050
+Text GLabel 2950 3050 0    50   Input ~ 0
+3V3
+Text GLabel 3600 3050 2    50   Input ~ 0
+PB1
 $EndSCHEMATC
