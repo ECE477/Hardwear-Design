@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\mjcre\Documents\Hardwear-Design\final_schematic.sch)
-    (date "10/7/2020 1:54:19 PM")
+    (date "10/7/2020 1:58:11 PM")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -99,7 +99,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5F8951ED))
     (comp (ref C11)
-      (value "0.1 uF")
+      (value 0.1uF)
       (datasheet ~)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
@@ -259,7 +259,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5F9411B4))
     (comp (ref C7)
-      (value .12uF)
+      (value 0.12uF)
       (datasheet ~)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
