@@ -443,8 +443,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 2500 2550 2500
 Connection ~ 1850 2500
-Text GLabel 2550 1900 2    20   Input ~ 0
-VDIO
 $Comp
 L Device:C C4
 U 1 1 5F7BD7F4
@@ -460,9 +458,7 @@ Wire Wire Line
 	2550 2400 2550 2500
 Connection ~ 2550 2500
 Wire Wire Line
-	2550 2500 1850 2500
-Text GLabel 1350 1600 0    20   Input ~ 0
-BL_IND
+	2550 2500 2250 2500
 $Comp
 L Device:R Re1
 U 1 1 5F7CAF35
@@ -474,23 +470,16 @@ F 3 "~" H 1000 950 50  0001 C CNN
 	1    1000 950 
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  1100 0    20   Input ~ 0
-nReset
 Wire Wire Line
 	1350 1100 1000 1100
-Wire Wire Line
-	850  1100 1000 1100
-Connection ~ 1000 1100
 Wire Wire Line
 	1850 900  1300 900 
 Wire Wire Line
 	1300 900  1300 800 
 Wire Wire Line
 	1300 800  1000 800 
-Text GLabel 850  800  0    20   Input ~ 0
-3V3
 Wire Wire Line
-	1000 800  850  800 
+	1000 800  900  800 
 Connection ~ 1000 800 
 $Comp
 L Device:R Rf1
@@ -503,22 +492,6 @@ F 3 "~" H 1000 1500 50  0001 C CNN
 	1    1000 1500
 	0    1    1    0   
 $EndComp
-Text GLabel 850  1500 0    20   Input ~ 0
-VDIO
-Text GLabel 2050 900  2    20   UnSpc ~ 0
-VDDIO
-Text GLabel 2550 1100 2    20   UnSpc ~ 0
-OSC
-Text GLabel 2550 1600 2    20   UnSpc ~ 0
-OSC
-Text GLabel 1350 1800 0    20   UnSpc ~ 0
-I2C_SDA
-Text GLabel 1350 1900 0    20   UnSpc ~ 0
-I2C_SCL
-Text GLabel 1350 2000 0    20   UnSpc ~ 0
-VDIO
-Text GLabel 1450 2500 0    20   UnSpc ~ 0
-VDD
 $Comp
 L Sensor_Motion:BNO055 U1
 U 1 1 5F866A8C
@@ -1628,7 +1601,6 @@ NoConn ~ 9850 1950
 NoConn ~ 9850 2050
 NoConn ~ 9850 2150
 NoConn ~ 9850 2250
-NoConn ~ 2050 2300
 Wire Wire Line
 	4450 3450 4400 3450
 NoConn ~ 6250 3550
@@ -1642,7 +1614,127 @@ Wire Wire Line
 	6250 4350 6400 4350
 NoConn ~ 4450 3250
 NoConn ~ 4450 3350
-NoConn ~ 4450 3150
 Wire Wire Line
 	1950 4350 1850 4350
+$Comp
+L power:GND #PWR?
+U 1 1 6016A2AA
+P 2250 2500
+F 0 "#PWR?" H 2250 2250 50  0001 C CNN
+F 1 "GND" H 2255 2327 50  0000 C CNN
+F 2 "" H 2250 2500 50  0001 C CNN
+F 3 "" H 2250 2500 50  0001 C CNN
+	1    2250 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2500
+Wire Wire Line
+	2250 2500 1950 2500
+Text GLabel 1400 2500 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	1400 2500 1450 2500
+Text GLabel 850  800  0    50   Input ~ 0
+3V3
+Text GLabel 2250 900  2    50   Input ~ 0
+3V3
+Wire Wire Line
+	2050 900  2200 900 
+Wire Wire Line
+	850  1500 700  1500
+Wire Wire Line
+	700  1500 700  950 
+Wire Wire Line
+	700  950  900  950 
+Wire Wire Line
+	900  950  900  800 
+Connection ~ 900  800 
+Wire Wire Line
+	900  800  850  800 
+Text GLabel 1000 1100 0    50   Input ~ 0
+PE0
+Text GLabel 4350 3150 0    50   Input ~ 0
+PE0
+Wire Wire Line
+	2550 1900 2800 1900
+Wire Wire Line
+	2800 1900 2800 2000
+Connection ~ 2800 2000
+Text GLabel 1250 1600 0    50   Input ~ 0
+?
+Text GLabel 1250 2100 0    50   Input ~ 0
+?
+Wire Wire Line
+	1350 2000 850  2000
+Wire Wire Line
+	850  2000 850  2650
+Wire Wire Line
+	850  2650 1950 2650
+Wire Wire Line
+	1950 2650 1950 2500
+Connection ~ 1950 2500
+Wire Wire Line
+	1950 2500 1850 2500
+Text GLabel 1250 1800 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 1250 1900 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	1350 1800 1250 1800
+Wire Wire Line
+	1350 1900 1250 1900
+Wire Wire Line
+	4450 3150 4350 3150
+$Comp
+L Device:C C?
+U 1 1 602AE3FE
+P 2850 1100
+F 0 "C?" H 2965 1146 50  0000 L CNN
+F 1 "120nF" H 2965 1055 50  0000 L CNN
+F 2 "" H 2888 950 50  0001 C CNN
+F 3 "~" H 2850 1100 50  0001 C CNN
+	1    2850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2300 2050 2400
+Wire Wire Line
+	2050 2400 2550 2400
+Wire Wire Line
+	2850 2400 2850 1300
+Connection ~ 2550 2400
+Wire Wire Line
+	2550 2400 2850 2400
+$Comp
+L Device:C C?
+U 1 1 602D57BB
+P 3200 1100
+F 0 "C?" H 3315 1146 50  0000 L CNN
+F 1 "120nF" H 3315 1055 50  0000 L CNN
+F 2 "" H 3238 950 50  0001 C CNN
+F 3 "~" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1300 3200 1300
+Wire Wire Line
+	3200 1300 3200 1250
+Connection ~ 2850 1300
+Wire Wire Line
+	2850 1300 2850 1250
+Wire Wire Line
+	3200 950  3200 800 
+Wire Wire Line
+	3200 800  2850 800 
+Wire Wire Line
+	2200 800  2200 900 
+Connection ~ 2200 900 
+Wire Wire Line
+	2200 900  2250 900 
+Wire Wire Line
+	2850 950  2850 800 
+Connection ~ 2850 800 
+Wire Wire Line
+	2850 800  2200 800 
 $EndSCHEMATC
