@@ -1,0 +1,16 @@
+ERC report (10/7/2020 2:24:37 PM, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(41.91 mm, 166.37 mm): Pin 1 (Power input) of component U2 is not driven (Net 1).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(240.03 mm, 57.15 mm): Pin 10 (Power input) of component U4 is not driven (Net 3).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(260.35 mm, 41.91 mm): Pin GND@3 (Power input) of component X1 is not driven (Net 44).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(113.03 mm, 72.39 mm): Pin 12 (Input) of component U3 is not driven (Net 50).
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(250.19 mm, 34.29 mm): Pin 9 (Bidirectional) of component U4 is connected to 
+    @(255.27 mm, 34.29 mm): pin P (Unspecified) of component X1 (net 55).
+
+ ** ERC messages: 5  Errors 0  Warnings 5
