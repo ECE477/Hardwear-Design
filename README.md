@@ -4,15 +4,14 @@ Schematic and PCB
 ## PCB Checklist
 ### 1 Parts Completion Check
 - [x] All major componenets included (ie. Micro, Power Supply, Regulation, Battery Management, IMU, GPS, LoRa, TOLED, Push Buttons, Reset Button, Signal LEDS)
-- [ ] All support components included (ie. Micro minimum connections, Testing Circuit, Support components package and value(R,Caps,Ind), Application circuits)
+- [x] All support components included (ie. Micro minimum connections, Testing Circuit, Support components package and value(R,Caps,Ind), Application circuits)
 #### Other
-- [ ] Progamming Header 
-- [ ] Reset Circuit
-- [ ] Power Connectors
+- [x] Progamming Header 
+- [x] Reset Circuit
+- [x] Power Connectors
 - [ ] Mounting holes
-- [ ] Heartbeat LED
-- [ ] Oscillator circuitry
-- [ ] Debugging LEDs
+- [x] Heartbeat LED
+- [x] Debugging LEDs (Transmit LED)
 ### 2 PCB Footprint Verification Check
 - [ ] All parts fir on 1:1 scale printout of PCB
 ### 3 Parts Placement Check
