@@ -191,22 +191,22 @@ Text Notes 10600 7650 0    50   ~ 0
 2
 Text Notes 7150 6900 0    118  ~ 0
 Snow-weAR Goggles\n
-Text GLabel 7900 5350 2    50   Input ~ 0
+Text GLabel 8300 4800 2    50   Input ~ 0
 SWDIO
-Text GLabel 7900 5250 2    50   Input ~ 0
+Text GLabel 8300 4700 2    50   Input ~ 0
 SWCLK
-Text GLabel 7900 5050 2    50   Input ~ 0
+Text GLabel 8300 4500 2    50   Input ~ 0
 3V3
 Wire Wire Line
-	7900 5350 7800 5350
-Text GLabel 7900 5150 2    50   Input ~ 0
+	8300 4800 8200 4800
+Text GLabel 8300 4600 2    50   Input ~ 0
 NRST
 Wire Wire Line
-	7900 5150 7800 5150
-Text GLabel 7900 5450 2    50   Input ~ 0
+	8300 4600 8200 4600
+Text GLabel 8300 4900 2    50   Input ~ 0
 SWO
 Wire Wire Line
-	7900 5450 7800 5450
+	8300 4900 8200 4900
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5FF26B1F
@@ -245,8 +245,6 @@ F 3 "" H 1350 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 6650 1150 6650
-Text Notes 7550 4400 2    50   ~ 10
-STM32 Connector
 Wire Wire Line
 	10000 3950 10200 3950
 Connection ~ 10000 3950
@@ -343,12 +341,12 @@ $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 60380C60
-P 7900 5550
-F 0 "#PWR010" H 7900 5300 50  0001 C CNN
-F 1 "GND" H 7905 5377 50  0000 C CNN
-F 2 "" H 7900 5550 50  0001 C CNN
-F 3 "" H 7900 5550 50  0001 C CNN
-	1    7900 5550
+P 8300 5000
+F 0 "#PWR010" H 8300 4750 50  0001 C CNN
+F 1 "GND" H 8305 4827 50  0000 C CNN
+F 2 "" H 8300 5000 50  0001 C CNN
+F 3 "" H 8300 5000 50  0001 C CNN
+	1    8300 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -365,7 +363,7 @@ $EndComp
 Text GLabel 1350 5400 2    50   Input ~ 0
 V_supply
 Text GLabel 800  5500 0    50   Input ~ 0
-3V3
+BB_Out
 Wire Wire Line
 	800  5500 950  5500
 Wire Wire Line
@@ -585,7 +583,7 @@ NoConn ~ 10200 1500
 NoConn ~ 10200 1600
 NoConn ~ 10200 1700
 Wire Wire Line
-	7900 5250 7800 5250
+	8300 4700 8200 4700
 $Comp
 L power:GND #PWR016
 U 1 1 6016A2AA
@@ -703,7 +701,7 @@ Wire Wire Line
 	7700 1900 7700 1950
 Connection ~ 7700 1950
 Wire Wire Line
-	7900 5550 7800 5550
+	8300 5000 8200 5000
 NoConn ~ 9800 3400
 NoConn ~ 9800 3500
 NoConn ~ 10800 4700
@@ -1405,11 +1403,9 @@ Wire Notes Line
 Text Notes 3750 950  0    50   Italic 10
 STM32L4 Microcontroller
 Wire Notes Line
-	6850 450  6850 6400
-Wire Notes Line
 	6850 2350 11250 2350
 Wire Notes Line
-	6850 4250 11250 4250
+	6850 4200 11250 4200
 Wire Notes Line
 	6850 6400 11250 6400
 $Comp
@@ -1596,7 +1592,7 @@ U 1 1 5FA613CD
 P 9700 1400
 F 0 "U3" H 9700 2078 50  0000 C CNN
 F 1 "RFM95W-915S2" H 9700 1987 50  0000 C CNN
-F 2 "" H 6400 3050 50  0001 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 6400 3050 50  0001 C CNN
 F 3 "http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf" H 6400 3050 50  0001 C CNN
 	1    9700 1400
 	1    0    0    -1  
@@ -1606,16 +1602,87 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Male J7
 U 1 1 5FADFDD2
-P 7600 5250
-F 0 "J7" H 7706 5628 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 7706 5537 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 7600 5250 50  0001 C CNN
-F 3 "~" H 7600 5250 50  0001 C CNN
-	1    7600 5250
+P 8000 4700
+F 0 "J7" H 8106 5078 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 8106 4987 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 8000 4700 50  0001 C CNN
+F 3 "~" H 8000 4700 50  0001 C CNN
+	1    8000 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 5050 7800 5050
+	8300 4500 8200 4500
 Wire Wire Line
 	950  1000 1150 1000
+$Comp
+L Regulator_Linear:LT1129-3.3_SO8 U5
+U 1 1 5FC4BDF4
+P 7650 5850
+F 0 "U5" H 7650 6192 50  0000 C CNN
+F 1 "LT1129-3.3_SO8" H 7650 6101 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7650 6150 50  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/112935ff.pdf" H 7650 5850 50  0001 C CNN
+	1    7650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C19
+U 1 1 5FC4C1D2
+P 8300 5900
+F 0 "C19" H 8415 5946 50  0000 L CNN
+F 1 "3.3uF" H 8415 5855 50  0000 L CNN
+F 2 "" H 8300 5900 50  0001 C CNN
+F 3 "~" H 8300 5900 50  0001 C CNN
+	1    8300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5FC4C2FA
+P 8300 6050
+F 0 "#PWR019" H 8300 5800 50  0001 C CNN
+F 1 "GND" H 8305 5877 50  0000 C CNN
+F 2 "" H 8300 6050 50  0001 C CNN
+F 3 "" H 8300 6050 50  0001 C CNN
+	1    8300 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7250 5850
+Text GLabel 7200 5750 0    50   Input ~ 0
+BB_Out
+Text GLabel 8450 5750 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	8450 5750 8300 5750
+Connection ~ 8300 5750
+Wire Wire Line
+	8300 5750 8150 5750
+Wire Wire Line
+	8050 5850 8150 5850
+Wire Wire Line
+	8150 5850 8150 5750
+Connection ~ 8150 5750
+Wire Wire Line
+	8150 5750 8050 5750
+$Comp
+L power:GND #PWR018
+U 1 1 5FC75E8F
+P 7650 6150
+F 0 "#PWR018" H 7650 5900 50  0001 C CNN
+F 1 "GND" H 7655 5977 50  0000 C CNN
+F 2 "" H 7650 6150 50  0001 C CNN
+F 3 "" H 7650 6150 50  0001 C CNN
+	1    7650 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5750 7200 5750
+Text Notes 7650 4750 2    50   ~ 10
+STM32 Connector
+Wire Notes Line
+	8700 5300 6850 5300
+Wire Notes Line
+	6850 500  6850 6450
+Text Notes 7950 5400 0    50   ~ 0
+Voltage Regulator
 $EndSCHEMATC
