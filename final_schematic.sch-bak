@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:final_schematic-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -25,6 +25,17 @@ F 3 "~" H 8000 2850 50  0001 C CNN
 	1    8000 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED RED1
+U 1 1 5F749F4D
+P 8400 3200
+F 0 "RED1" H 8393 3416 50  0000 C TNN
+F 1 "LED_GPS_R" H 8393 3325 50  0000 C TNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8400 3200 50  0001 C CNN
+F 3 "~" H 8400 3200 50  0001 C CNN
+	1    8400 3200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	10000 3950 10000 3900
 $Comp
@@ -46,6 +57,17 @@ Wire Wire Line
 	10200 2900 10200 3600
 Wire Wire Line
 	10200 3600 10200 3950
+$Comp
+L Device:R_US R10
+U 1 1 5F742F75
+P 8150 3350
+F 0 "R10" H 7943 3350 50  0000 L BNN
+F 1 "1k" H 8034 3350 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 8080 3350 50  0001 C CNN
+F 3 "~" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
 Text GLabel 8550 3600 0    50   Input ~ 0
 USART_RX
 Text GLabel 8550 3700 0    50   Input ~ 0
@@ -226,6 +248,8 @@ Wire Wire Line
 Wire Wire Line
 	10000 3950 10200 3950
 Connection ~ 10000 3950
+Wire Wire Line
+	8250 3200 8150 3200
 $Comp
 L Device:LED D1
 U 1 1 6026BCA4
@@ -828,6 +852,8 @@ Wire Wire Line
 	8550 2600 8500 2600
 Connection ~ 8000 3500
 Wire Wire Line
+	8000 3500 8150 3500
+Wire Wire Line
 	8550 3000 8000 3000
 Wire Wire Line
 	8000 3000 8000 3500
@@ -837,6 +863,9 @@ Wire Wire Line
 Connection ~ 8550 2700
 Wire Wire Line
 	8550 2700 8550 2600
+Connection ~ 8150 3500
+Wire Wire Line
+	8150 3500 8550 3500
 Text Notes 9100 2500 0    50   ~ 10
 GPS
 Text Notes 900  5150 0    50   ~ 0
@@ -1558,7 +1587,7 @@ F 3 "" H 2750 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L final_schematic-rescue:RFM95W-915S2-RF_AM_FM U3
+L RF_AM_FM:RFM95W-915S2 U3
 U 1 1 5FA613CD
 P 9700 1400
 F 0 "U3" H 9700 2078 50  0000 C CNN
@@ -1656,7 +1685,4 @@ Wire Notes Line
 	6850 500  6850 6450
 Text Notes 7950 5400 0    50   ~ 0
 Voltage Regulator
-Wire Wire Line
-	8000 3500 8550 3500
-NoConn ~ 8550 3200
 $EndSCHEMATC
