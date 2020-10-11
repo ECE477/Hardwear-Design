@@ -59,6 +59,7 @@ $EndComp
 Text GLabel 9350 3600 0    50   Input ~ 0
 USART_RX
 Text GLabel 9350 3700 0    50   Input ~ 0
+
 USART_TX
 $Comp
 L final_schematic-rescue:MTK3339-GPS-rescue U2
@@ -899,12 +900,14 @@ NoConn ~ 5050 4250
 NoConn ~ 5050 4150
 NoConn ~ 5050 3850
 NoConn ~ 5050 3750
+
 NoConn ~ 5050 3550
 NoConn ~ 5050 3150
 NoConn ~ 5050 2850
 NoConn ~ 5050 2750
 NoConn ~ 5050 1850
 NoConn ~ 5050 1750
+
 NoConn ~ 4550 1350
 NoConn ~ 4450 1350
 NoConn ~ 5050 6550

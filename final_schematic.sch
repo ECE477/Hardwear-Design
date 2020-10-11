@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:final_schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -22,6 +23,7 @@ F 1 "0.1uF" H 9015 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8938 3000 50  0001 C CNN
 F 3 "~" H 8900 3150 50  0001 C CNN
 	1    8900 3150
+
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -57,6 +59,7 @@ F 3 "~" H 1300 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 9350 3600 0    50   Input ~ 0
+
 USART_RX
 Text GLabel 9350 3700 0    50   Input ~ 0
 USART_TX
@@ -172,6 +175,7 @@ Text Notes 8250 7650 0    50   ~ 0
 October 11, 2020
 Text Notes 10600 7650 0    50   ~ 0
 2
+
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 5FF26B1F
@@ -719,8 +723,6 @@ Text Notes 9900 2500 0    50   ~ 10
 GPS
 Text Notes 900  5150 0    50   ~ 0
 Power Switch
-Wire Notes Line
-	450  5850 1850 5850
 Wire Wire Line
 	600  2450 600  2100
 Text Notes 600  1800 0    50   ~ 0
@@ -1527,4 +1529,5 @@ NoConn ~ 5050 4650
 NoConn ~ 5050 4750
 NoConn ~ 3250 5450
 NoConn ~ 3250 5550
+
 $EndSCHEMATC
