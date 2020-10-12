@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:final_schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -52,14 +51,13 @@ U 1 1 5F742F75
 P 1300 1150
 F 0 "R10" H 1093 1150 50  0000 L BNN
 F 1 "62" H 1184 1150 50  0000 C TNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1230 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1230 1150 50  0001 C CNN
 F 3 "~" H 1300 1150 50  0001 C CNN
 	1    1300 1150
 	-1   0    0    1   
 $EndComp
 Text GLabel 9350 3600 0    50   Input ~ 0
 
-USART_RX
 Text GLabel 9350 3700 0    50   Input ~ 0
 USART_TX
 $Comp
@@ -1208,7 +1206,7 @@ U 1 1 5F905CE5
 P 1300 3350
 F 0 "R9" H 1093 3350 50  0000 L BNN
 F 1 "62" H 1184 3350 50  0000 C TNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1230 3350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1230 3350 50  0001 C CNN
 F 3 "~" H 1300 3350 50  0001 C CNN
 	1    1300 3350
 	-1   0    0    1   
@@ -1224,7 +1222,7 @@ U 1 1 5F994D23
 P 1450 4550
 F 0 "R11" H 1243 4550 50  0000 L BNN
 F 1 "62" H 1334 4550 50  0000 C TNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1380 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1380 4550 50  0001 C CNN
 F 3 "~" H 1450 4550 50  0001 C CNN
 	1    1450 4550
 	-1   0    0    1   
@@ -1301,7 +1299,7 @@ U 1 1 5FBD623E
 P 7950 2200
 F 0 "J5" H 7868 1775 50  0000 C CNN
 F 1 "Programmer" H 7868 1866 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7950 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 7950 2200 50  0001 C CNN
 F 3 "~" H 7950 2200 50  0001 C CNN
 	1    7950 2200
 	-1   0    0    1   
