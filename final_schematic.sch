@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:final_schematic-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -58,8 +57,7 @@ F 3 "~" H 1300 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 9350 3600 0    50   Input ~ 0
-Text GLabel 9350 3700 0    50   Input ~ 0
-USART_TX
+USART_RX
 $Comp
 L final_schematic-rescue:MTK3339-GPS-rescue U2
 U 1 1 5F74B7B3
@@ -175,39 +173,39 @@ Text Notes 10600 7650 0    50   ~ 0
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 5FF26B1F
-P 800 6650
-F 0 "J1" H 906 6928 50  0000 C CNN
-F 1 "Battery Babysitter" V 906 6837 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 800 6650 50  0001 C CNN
-F 3 "~" H 800 6650 50  0001 C CNN
-	1    800  6650
+P 800 6550
+F 0 "J1" H 906 6828 50  0000 C CNN
+F 1 "Battery Babysitter" V 906 6737 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 800 6550 50  0001 C CNN
+F 3 "~" H 800 6550 50  0001 C CNN
+	1    800  6550
 	-1   0    0    1   
 $EndComp
-Text Notes 850  6200 0    50   ~ 0
+Text Notes 850  6100 0    50   ~ 0
 Battery Babysitter \nConnector
-Text GLabel 1200 6650 2    50   Input ~ 0
-I2C3_SDA
 Text GLabel 1200 6550 2    50   Input ~ 0
+I2C3_SDA
+Text GLabel 1200 6450 2    50   Input ~ 0
 I2C3_SCL
-Text GLabel 1200 6750 2    50   Input ~ 0
+Text GLabel 1200 6650 2    50   Input ~ 0
 V_supply
 Wire Wire Line
-	1200 6750 1000 6750
-Wire Wire Line
 	1200 6650 1000 6650
+Wire Wire Line
+	1200 6550 1000 6550
 $Comp
 L power:GND #PWR05
 U 1 1 60007EB3
-P 1100 6850
-F 0 "#PWR05" H 1100 6600 50  0001 C CNN
-F 1 "GND" V 1105 6677 50  0000 C CNN
-F 2 "" H 1100 6850 50  0001 C CNN
-F 3 "" H 1100 6850 50  0001 C CNN
-	1    1100 6850
+P 1100 6750
+F 0 "#PWR05" H 1100 6500 50  0001 C CNN
+F 1 "GND" V 1105 6577 50  0000 C CNN
+F 2 "" H 1100 6750 50  0001 C CNN
+F 3 "" H 1100 6750 50  0001 C CNN
+	1    1100 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 6550 1000 6550
+	1200 6450 1000 6450
 Text Notes 8600 1700 2    50   ~ 10
 JTAG Debugger/Programmer
 Wire Wire Line
@@ -555,12 +553,12 @@ Text GLabel 9600 5400 0    50   Input ~ 0
 I2C2_SDA
 Text GLabel 9600 5500 0    50   Input ~ 0
 I2C2_SCL
-Text GLabel 1200 6450 2    50   Input ~ 0
+Text GLabel 1200 6350 2    50   Input ~ 0
 BB_GPOUT
 Wire Wire Line
-	1000 6350 1200 6350
+	1000 6250 1200 6250
 Wire Wire Line
-	1200 6450 1000 6450
+	1200 6350 1000 6350
 NoConn ~ 10600 3400
 NoConn ~ 10600 3500
 NoConn ~ 10800 4700
@@ -880,17 +878,17 @@ Wire Wire Line
 	2800 1950 2800 2050
 Text GLabel 2800 1950 0    50   Input ~ 0
 3V3
-Text GLabel 3100 4650 0    50   Input ~ 0
+Text GLabel 3150 4850 0    50   Input ~ 0
 BL_IND
-Text GLabel 3100 4550 0    50   Input ~ 0
+Text GLabel 3150 4550 0    50   Input ~ 0
 IMU_ADDR
 Text GLabel 2600 1200 0    50   Input ~ 0
 BOOT0
 Text GLabel 5150 1650 2    50   Input ~ 0
 SYSOFF
-Text GLabel 5200 5350 2    50   Input ~ 0
+Text GLabel 3150 3050 0    50   Input ~ 0
 BB_GPOUT
-Text GLabel 3100 4850 0    50   Input ~ 0
+Text GLabel 3150 4750 0    50   Input ~ 0
 IMU_nRST
 NoConn ~ 3250 3450
 NoConn ~ 5050 4250
@@ -901,8 +899,6 @@ NoConn ~ 5050 3550
 NoConn ~ 5050 3150
 NoConn ~ 5050 2850
 NoConn ~ 5050 2750
-NoConn ~ 5050 1850
-NoConn ~ 5050 1750
 NoConn ~ 4550 1350
 NoConn ~ 4450 1350
 NoConn ~ 5050 6550
@@ -938,9 +934,9 @@ NoConn ~ 3250 4150
 NoConn ~ 3250 3950
 NoConn ~ 3250 3850
 NoConn ~ 3250 3750
-Text GLabel 3100 3550 0    50   Input ~ 0
+Text GLabel 5150 1750 2    50   Input ~ 0
 session_btn
-Text GLabel 3100 3650 0    50   Input ~ 0
+Text GLabel 5150 1850 2    50   Input ~ 0
 radio_btn
 Wire Wire Line
 	3250 1650 3100 1650
@@ -970,17 +966,17 @@ $EndComp
 Wire Wire Line
 	4250 1250 4350 1250
 Connection ~ 4150 1250
-Text GLabel 3100 4750 0    50   Input ~ 0
+Text GLabel 3150 4650 0    50   Input ~ 0
 IMU_INT
-Text GLabel 5200 5550 2    50   Input ~ 0
+Text GLabel 5150 2050 2    50   Input ~ 0
 CS_LORA
-Text GLabel 5200 5450 2    50   Input ~ 0
+Text GLabel 5150 1950 2    50   Input ~ 0
 LoRa_RST
-Text GLabel 5200 5250 2    50   Input ~ 0
+Text GLabel 3150 3150 0    50   Input ~ 0
 BB_CE
-Text GLabel 5200 4450 2    50   Input ~ 0
+Text GLabel 5150 4450 2    50   Input ~ 0
 I2C2_SDA
-Text GLabel 5200 4350 2    50   Input ~ 0
+Text GLabel 5150 4350 2    50   Input ~ 0
 I2C2_SCL
 Connection ~ 4350 6950
 Wire Wire Line
@@ -1171,7 +1167,7 @@ F 3 " ~" H 10750 1100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 5600 9600 5600
-Text GLabel 1200 6350 2    50   Input ~ 0
+Text GLabel 1200 6250 2    50   Input ~ 0
 BB_CE
 Wire Wire Line
 	8800 3500 8900 3500
@@ -1330,28 +1326,28 @@ Snow-weAR Goggles\n
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5FC7E508
-P 800 7550
-F 0 "J2" H 880 7542 50  0000 L CNN
-F 1 "BB_SYSOFF" V 880 7451 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 800 7550 50  0001 C CNN
-F 3 "~" H 800 7550 50  0001 C CNN
-	1    800  7550
+P 800 7500
+F 0 "J2" H 880 7492 50  0000 L CNN
+F 1 "BB_SYSOFF" V 880 7401 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 800 7500 50  0001 C CNN
+F 3 "~" H 800 7500 50  0001 C CNN
+	1    800  7500
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FC7E50E
-P 1000 7550
+P 1000 7500
 AR Path="/5F775B0B/5FC7E50E" Ref="#PWR?"  Part="1" 
 AR Path="/5FC7E50E" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 1000 7300 50  0001 C CNN
-F 1 "GND" H 1005 7377 50  0000 C CNN
-F 2 "" H 1000 7550 50  0001 C CNN
-F 3 "" H 1000 7550 50  0001 C CNN
-	1    1000 7550
+F 0 "#PWR0104" H 1000 7250 50  0001 C CNN
+F 1 "GND" H 1005 7327 50  0000 C CNN
+F 2 "" H 1000 7500 50  0001 C CNN
+F 3 "" H 1000 7500 50  0001 C CNN
+	1    1000 7500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 7450 2    50   Input ~ 0
+Text GLabel 1000 7400 2    50   Input ~ 0
 SYSOFF
 $Comp
 L Regulator_Linear:LT1129-3.3_SO8 U5
@@ -1408,11 +1404,10 @@ Wire Wire Line
 Connection ~ 7450 5650
 NoConn ~ 6500 5750
 NoConn ~ 9350 3200
-NoConn ~ 5050 2050
 NoConn ~ 5050 2450
 NoConn ~ 5050 3650
 Wire Wire Line
-	1100 6850 1000 6850
+	1100 6750 1000 6750
 Wire Wire Line
 	7300 5750 7350 5750
 Wire Wire Line
@@ -1447,13 +1442,13 @@ Wire Wire Line
 Wire Wire Line
 	600  2450 600  2500
 Connection ~ 600  2450
-Text GLabel 5200 4050 2    50   Input ~ 0
+Text GLabel 5150 4050 2    50   Input ~ 0
 I2C1_SDA
-Text GLabel 5200 3950 2    50   Input ~ 0
+Text GLabel 5150 3950 2    50   Input ~ 0
 I2C1_SCL
-Text GLabel 5200 5150 2    50   Input ~ 0
+Text GLabel 5150 5150 2    50   Input ~ 0
 I2C3_SDA
-Text GLabel 5200 5050 2    50   Input ~ 0
+Text GLabel 5150 5050 2    50   Input ~ 0
 I2C3_SCL
 Wire Wire Line
 	5050 1650 5150 1650
@@ -1472,45 +1467,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 3050 5150 3050
 Wire Wire Line
-	5200 3950 5050 3950
-Wire Wire Line
-	5050 4050 5200 4050
-Wire Wire Line
-	5200 4350 5050 4350
-Wire Wire Line
-	5050 4450 5200 4450
-Wire Wire Line
-	5200 5050 5050 5050
-Wire Wire Line
-	5050 5150 5200 5150
-Wire Wire Line
-	5200 5250 5050 5250
-Wire Wire Line
-	5200 5350 5050 5350
-Wire Wire Line
-	5200 5450 5050 5450
-Wire Wire Line
-	5200 5550 5050 5550
-Wire Wire Line
-	3100 3550 3250 3550
-Wire Wire Line
-	3250 3650 3100 3650
-Wire Wire Line
-	3100 4550 3250 4550
-Wire Wire Line
-	3250 4650 3100 4650
-Wire Wire Line
-	3100 4750 3250 4750
-Wire Wire Line
-	3250 4850 3100 4850
-Wire Wire Line
 	4350 1250 5800 1250
 Connection ~ 4350 1250
-NoConn ~ 5050 1950
 NoConn ~ 5050 3350
 NoConn ~ 5050 3450
-NoConn ~ 3250 3050
-NoConn ~ 3250 3150
 NoConn ~ 3250 3350
 NoConn ~ 5050 4550
 NoConn ~ 5050 4650
@@ -1520,31 +1480,29 @@ NoConn ~ 3250 5550
 $Comp
 L Device:D_Zener D3
 U 1 1 5F894344
-P 7800 4750
-F 0 "D3" H 7800 4966 50  0000 C CNN
-F 1 "D_Zener" H 7800 4875 50  0000 C CNN
-F 2 "footprint_lib:1N5355BRLG" H 7800 4750 50  0001 C CNN
-F 3 "~" H 7800 4750 50  0001 C CNN
-	1    7800 4750
+P 8300 4850
+F 0 "D3" H 8300 5066 50  0000 C CNN
+F 1 "D_Zener" H 8300 4975 50  0000 C CNN
+F 2 "footprint_lib:1N5355BRLG" H 8300 4850 50  0001 C CNN
+F 3 "~" H 8300 4850 50  0001 C CNN
+	1    8300 4850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 4750 2    50   Input ~ 0
+Text GLabel 8450 4850 2    50   Input ~ 0
 3V3
 $Comp
 L power:GND #PWR010
 U 1 1 5F8944C0
-P 7500 4750
-F 0 "#PWR010" H 7500 4500 50  0001 C CNN
-F 1 "GND" H 7505 4577 50  0000 C CNN
-F 2 "" H 7500 4750 50  0001 C CNN
-F 3 "" H 7500 4750 50  0001 C CNN
-	1    7500 4750
+P 8000 4850
+F 0 "#PWR010" H 8000 4600 50  0001 C CNN
+F 1 "GND" H 8005 4677 50  0000 C CNN
+F 2 "" H 8000 4850 50  0001 C CNN
+F 3 "" H 8000 4850 50  0001 C CNN
+	1    8000 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 4750 7500 4750
-Wire Wire Line
-	8200 4750 7950 4750
+	8150 4850 8000 4850
 $Comp
 L Device:CP1 C19
 U 1 1 5F8EC400
@@ -1567,10 +1525,54 @@ Wire Notes Line
 	6000 5100 6000 6400
 Wire Notes Line
 	6000 6400 11200 6400
-Wire Notes Line
-	7350 5100 7350 4250
-Wire Notes Line
-	7350 4250 11200 4250
-Text Notes 8050 4400 0    50   ~ 0
+Text Notes 8000 4550 0    50   ~ 0
 Surge protector
+Text GLabel 9350 3700 0    50   Input ~ 0
+USART_TX
+Wire Notes Line
+	11200 4250 8700 4250
+Wire Notes Line
+	8700 4400 7850 4400
+Wire Notes Line
+	7850 4400 7850 5100
+Wire Notes Line
+	1850 5850 450  5850
+Wire Wire Line
+	5050 1750 5150 1750
+Wire Wire Line
+	5050 1850 5150 1850
+Wire Wire Line
+	5050 1950 5150 1950
+Wire Wire Line
+	5050 2050 5150 2050
+Wire Wire Line
+	5150 3950 5050 3950
+Wire Wire Line
+	5050 4050 5150 4050
+Wire Wire Line
+	5150 4350 5050 4350
+Wire Wire Line
+	5050 4450 5150 4450
+Wire Wire Line
+	5150 5050 5050 5050
+Wire Wire Line
+	5050 5150 5150 5150
+Wire Wire Line
+	3250 4550 3150 4550
+Wire Wire Line
+	3150 4650 3250 4650
+Wire Wire Line
+	3250 4750 3150 4750
+Wire Wire Line
+	3150 4850 3250 4850
+Wire Wire Line
+	3250 3050 3150 3050
+Wire Wire Line
+	3150 3150 3250 3150
+NoConn ~ 5050 5250
+NoConn ~ 5050 5350
+NoConn ~ 5050 5450
+NoConn ~ 5050 5550
+NoConn ~ 3250 3550
+NoConn ~ 3250 3650
 $EndSCHEMATC
