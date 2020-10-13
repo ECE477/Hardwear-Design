@@ -57,7 +57,6 @@ F 3 "~" H 1300 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 9350 3600 0    50   Input ~ 0
-
 Text GLabel 9350 3700 0    50   Input ~ 0
 USART_TX
 $Comp
