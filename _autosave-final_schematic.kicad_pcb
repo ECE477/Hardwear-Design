@@ -374,7 +374,7 @@
     (add_net session_btn)
   )
 
-  (module footprint_lib:logo2 (layer F.Cu) (tedit 0) (tstamp 5F86EC66)
+  (module footprint_lib:logo2 locked (layer F.Cu) (tedit 0) (tstamp 5F86EC66)
     (at 108.1532 48.26)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
