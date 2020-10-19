@@ -176,7 +176,7 @@ U 1 1 5FF26B1F
 P 6750 3750
 F 0 "J1" H 6856 4028 50  0000 C CNN
 F 1 "Battery Babysitter" V 6856 3937 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 6750 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6750 3750 50  0001 C CNN
 F 3 "~" H 6750 3750 50  0001 C CNN
 	1    6750 3750
 	-1   0    0    1   
@@ -1230,7 +1230,7 @@ U 1 1 5FAF5C16
 P 2900 1300
 F 0 "J3" H 2980 1292 50  0000 L CNN
 F 1 "BOOT0" H 2980 1201 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 2900 1300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 1300 50  0001 C CNN
 F 3 "~" H 2900 1300 50  0001 C CNN
 	1    2900 1300
 	1    0    0    -1  
@@ -1248,34 +1248,8 @@ F 3 "" H 2700 1400 50  0001 C CNN
 	1    2700 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 5FBD623E
-P 1050 7100
-F 0 "J5" H 968 6675 50  0000 C CNN
-F 1 "Programmer" H 968 6766 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 1050 7100 50  0001 C CNN
-F 3 "~" H 1050 7100 50  0001 C CNN
-	1    1050 7100
-	-1   0    0    1   
-$EndComp
-Text GLabel 1250 7000 2    50   Input ~ 0
-SWDIO
 Text GLabel 1250 6900 2    50   Input ~ 0
 SWCLK
-Text GLabel 1250 7100 2    50   Input ~ 0
-3V3
-$Comp
-L power:GND #PWR0103
-U 1 1 5FBFA3D2
-P 1250 7200
-F 0 "#PWR0103" H 1250 6950 50  0001 C CNN
-F 1 "GND" H 1255 7027 50  0000 C CNN
-F 2 "" H 1250 7200 50  0001 C CNN
-F 3 "" H 1250 7200 50  0001 C CNN
-	1    1250 7200
-	1    0    0    -1  
-$EndComp
 Text Notes 7150 6900 0    118  ~ 0
 Snow-weAR Goggles\n
 $Comp
@@ -1284,7 +1258,7 @@ U 1 1 5FC7E508
 P 7850 3850
 F 0 "J2" H 7930 3842 50  0000 L CNN
 F 1 "BB_SYSOFF" V 7930 3751 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7850 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7850 3850 50  0001 C CNN
 F 3 "~" H 7850 3850 50  0001 C CNN
 	1    7850 3850
 	-1   0    0    1   
@@ -1566,4 +1540,30 @@ Wire Notes Line
 	6300 3050 6300 6400
 Wire Notes Line
 	7200 4300 7200 5150
+$Comp
+L power:GND #PWR0103
+U 1 1 5FBFA3D2
+P 1250 7200
+F 0 "#PWR0103" H 1250 6950 50  0001 C CNN
+F 1 "GND" H 1255 7027 50  0000 C CNN
+F 2 "" H 1250 7200 50  0001 C CNN
+F 3 "" H 1250 7200 50  0001 C CNN
+	1    1250 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 7100 2    50   Input ~ 0
+3V3
+Text GLabel 1250 7000 2    50   Input ~ 0
+SWDIO
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5FBD623E
+P 1050 7100
+F 0 "J5" H 968 6675 50  0000 C CNN
+F 1 "Programmer" H 968 6766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1050 7100 50  0001 C CNN
+F 3 "~" H 1050 7100 50  0001 C CNN
+	1    1050 7100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
