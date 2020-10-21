@@ -737,7 +737,7 @@ L Device:C C?
 U 1 1 5F8F3A68
 P 6200 1350
 AR Path="/5F775B0B/5F8F3A68" Ref="C?"  Part="1" 
-AR Path="/5F8F3A68" Ref="C9"  Part="1" 
+AR Path="/5F8F3A68" Ref="C9"  Part="1"
 F 0 "C9" H 6315 1396 50  0000 L CNN
 F 1 "0.1uF" H 6315 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6238 1200 50  0001 C CNN
@@ -1144,7 +1144,7 @@ U 1 1 5F9E6C04
 P 7950 1150
 F 0 "J4" H 7978 1126 50  0000 L TNN
 F 1 "OLED Qwiic" H 7978 1035 50  0000 L TNN
-F 2 "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal" H 7950 1150 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 7950 1150 50  0001 C CNN
 F 3 "~" H 7950 1150 50  0001 C CNN
 	1    7950 1150
 	-1   0    0    1   
@@ -1187,19 +1187,6 @@ Text GLabel 1250 7000 2    50   Input ~ 0
 SWDIO
 Text GLabel 1250 6900 2    50   Input ~ 0
 SWCLK
-Text GLabel 1250 7100 2    50   Input ~ 0
-3V3
-$Comp
-L power:GND #PWR0103
-U 1 1 5FBFA3D2
-P 1250 7200
-F 0 "#PWR0103" H 1250 6950 50  0001 C CNN
-F 1 "GND" H 1255 7027 50  0000 C CNN
-F 2 "" H 1250 7200 50  0001 C CNN
-F 3 "" H 1250 7200 50  0001 C CNN
-	1    1250 7200
-	1    0    0    -1  
-$EndComp
 Text Notes 7150 6900 0    118  ~ 0
 Snow-weAR Goggles\n
 $Comp
