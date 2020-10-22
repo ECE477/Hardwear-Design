@@ -812,10 +812,6 @@ F 3 "" H 6700 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5950 1000 6200 1000
-Wire Wire Line
-	2900 2150 2900 1900
-Wire Wire Line
-	2550 2150 2900 2150
 Connection ~ 5450 1000
 Wire Wire Line
 	3800 1000 3900 1000
@@ -865,10 +861,6 @@ Wire Wire Line
 	5700 1500 5700 1600
 Wire Wire Line
 	5700 1600 5950 1600
-Wire Wire Line
-	2300 1700 2300 1800
-Text GLabel 2300 1700 0    50   Input ~ 0
-3V3
 Text GLabel 2800 4600 0    50   Input ~ 0
 BL_IND
 Text GLabel 2800 4300 0    50   Input ~ 0
@@ -956,56 +948,18 @@ Text GLabel 4800 2700 2    50   Input ~ 0
 SWDIO
 Text GLabel 4800 2800 2    50   Input ~ 0
 SWCLK
-Wire Wire Line
-	2300 2150 2550 2150
-Connection ~ 2550 2150
-Connection ~ 2550 1800
-Wire Wire Line
-	2550 1800 2900 1800
-Wire Wire Line
-	2550 1800 2550 1850
-Wire Wire Line
-	2300 1850 2300 1800
-Wire Wire Line
-	2550 2150 2550 2250
-$Comp
-L Device:C C?
-U 1 1 5F8951F4
-P 2550 2000
-AR Path="/5F775B0B/5F8951F4" Ref="C?"  Part="1" 
-AR Path="/5F8951F4" Ref="C5"  Part="1" 
-F 0 "C5" H 2665 2046 50  0000 L CNN
-F 1 "0.1uF" H 2665 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2588 1850 50  0001 C CNN
-F 3 "~" H 2550 2000 50  0001 C CNN
-	1    2550 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F8951ED
-P 2300 2000
-AR Path="/5F775B0B/5F8951ED" Ref="C?"  Part="1" 
-AR Path="/5F8951ED" Ref="C4"  Part="1" 
-F 0 "C4" H 2415 2046 50  0000 L CNN
-F 1 "1uF" H 2415 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2338 1850 50  0001 C CNN
-F 3 "~" H 2300 2000 50  0001 C CNN
-	1    2300 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F8951E0
-P 2550 2250
+P 2800 1850
 AR Path="/5F775B0B/5F8951E0" Ref="#PWR?"  Part="1" 
 AR Path="/5F8951E0" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 2550 2000 50  0001 C CNN
-F 1 "GND" H 2555 2077 50  0000 C CNN
-F 2 "" H 2550 2250 50  0001 C CNN
-F 3 "" H 2550 2250 50  0001 C CNN
-	1    2550 2250
-	1    0    0    -1  
+F 0 "#PWR07" H 2800 1600 50  0001 C CNN
+F 1 "GND" H 2805 1677 50  0000 C CNN
+F 2 "" H 2800 1850 50  0001 C CNN
+F 3 "" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3600 1000 3700 1000
@@ -1464,9 +1418,6 @@ F 3 "" H 2900 1600 50  0001 C CNN
 	1    2900 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 2300 1800
-Wire Wire Line
-	2300 1800 2550 1800
 Wire Wire Line
 	4100 1100 4100 1000
 Connection ~ 4100 1000
@@ -1772,4 +1723,13 @@ Wire Notes Line
 	6200 3200 8600 3200
 Wire Notes Line
 	6200 1950 8600 1950
+Wire Wire Line
+	2900 1800 2800 1800
+Wire Wire Line
+	2800 1800 2800 1850
+Wire Wire Line
+	2900 1900 2800 1900
+Wire Wire Line
+	2800 1900 2800 1850
+Connection ~ 2800 1850
 $EndSCHEMATC
