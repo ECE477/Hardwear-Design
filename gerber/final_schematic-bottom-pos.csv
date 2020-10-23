@@ -1,0 +1,15 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C2","1uF","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",146.151600,-102.158800,90.000000,bottom
+"C3","1uF","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",130.048000,-102.717600,180.000000,bottom
+"C6","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",126.847600,-71.928900,270.000000,bottom
+"C7","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",118.795800,-81.711800,0.000000,bottom
+"C8","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",124.206000,-82.143600,180.000000,bottom
+"C9","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",115.722400,-79.810700,90.000000,bottom
+"C10","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",116.713000,-71.018400,0.000000,bottom
+"C11","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",126.873000,-78.540700,90.000000,bottom
+"C13","0.1uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",115.773200,-63.538100,0.000000,bottom
+"C14","10uF","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",146.062700,-83.642600,90.000000,bottom
+"C19",".1uF","CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder",110.693200,-94.081600,180.000000,bottom
+"R12","10k","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",109.423200,-80.070200,90.000000,bottom
+"R13","10k","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",138.315700,-59.782200,270.000000,bottom
+"U6","TC2014-3.3VxCTTR","SOT-23-5",121.843800,-71.983600,180.000000,bottom

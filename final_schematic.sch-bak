@@ -1551,23 +1551,23 @@ Wire Wire Line
 Wire Wire Line
 	2800 1900 2800 1850
 Connection ~ 2800 1850
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 5F943B4E
-P 9700 5200
-F 0 "J3" H 9808 5481 50  0000 C CNN
-F 1 "IMU JST QWIIC" H 9808 5390 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 9700 5200 50  0001 C CNN
-F 3 "~" H 9700 5200 50  0001 C CNN
-	1    9700 5200
-	1    0    0    -1  
-$EndComp
-Text GLabel 9900 5100 2    50   Input ~ 0
+Text GLabel 10000 5150 2    50   Input ~ 0
 GND
-Text GLabel 9900 5200 2    50   Input ~ 0
+Text GLabel 10000 5250 2    50   Input ~ 0
 3V3
-Text GLabel 9900 5300 2    50   Input ~ 0
+Text GLabel 10000 5350 2    50   Input ~ 0
 I2C2_SDA
-Text GLabel 9900 5400 2    50   Input ~ 0
+Text GLabel 10000 5450 2    50   Input ~ 0
 I2C2_SCL
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5F9ABE8E
+P 9800 5350
+F 0 "J3" H 9880 5342 50  0000 L CNN
+F 1 "IMU_QWIIC" H 9880 5251 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 9800 5350 50  0001 C CNN
+F 3 "~" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
