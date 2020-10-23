@@ -13,11 +13,11 @@ Schematic and PCB
 - [x] Heartbeat LED
 - [x] Debugging LEDs (Transmit LED)
 ### 2 PCB Footprint Verification Check
-- [ ] All parts fir on 1:1 scale printout of PCB
+- [x] All parts fir on 1:1 scale printout of PCB
 ### 3 Parts Placement Check
-- [x] Oscillator close to Micro?
+- [x] Oscillator close to Micro? (N/A)
 - [x] Decoupling caps close to/under related ICs?
-- [ ] Connectors on board edges?
+- [x] Connectors on board edges?
 - [x] Parts grouped by system and/or in reasonable way that minimizes routing?
 ### 4 Mechanical/Space Conflict Check:
 - [x] Has x- and y- footprint space around electrical pins and pads of all parts been accounted for?
@@ -36,12 +36,12 @@ Schematic and PCB
 - [x] Right angles have been removed, except where necessary?
 - [x] Acute angles have been eliminated from all board routing?
 ### 7 Via Minimization Check:
-- [ ] Vias have been eliminated to extent reasonable?
-- [ ] Signal planes on opposite sides of boards are connected by vias at reasonable intervals?
-- [ ] Signal Plane Check:
-- [ ] Signal planes have been included, where reasonable?
-- [ ] Analog ground (AGND), has been separated from the main ground net in accordance with microcontroller datasheets?
-- [ ] Isolation on all signal planes has been set to at least 12 mils?
+- [x] Vias have been eliminated to extent reasonable?
+- [x] Signal planes on opposite sides of boards are connected by vias at reasonable intervals?
+- [x] Signal Plane Check:
+- [x] Signal planes have been included, where reasonable?
+- [x] Analog ground (AGND), has been separated from the main ground net in accordance with microcontroller datasheets?
+- [x] Isolation on all signal planes has been set to at least 12 mils?
 ### 9 Silkscreen check
 - [x] Silkscreen labels have been provided for all component IDs and connector signal names?
 - [x] Silkscreen labels have been appropriately placed near components, but not on top of pads or pins?
