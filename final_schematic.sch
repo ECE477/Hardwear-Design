@@ -93,41 +93,6 @@ F 3 "" H 10800 4000 50  0001 C CNN
 $EndComp
 Text Notes 9700 4350 0    50   ~ 10
 IMU
-Wire Wire Line
-	10800 5600 11050 5600
-$Comp
-L Device:C C18
-U 1 1 5F7BD7F4
-P 10800 5850
-F 0 "C18" H 10915 5896 50  0000 L CNN
-F 1 "0.1uF" H 10915 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10838 5700 50  0001 C CNN
-F 3 "~" H 10800 5850 50  0001 C CNN
-	1    10800 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US Re1
-U 1 1 5F7CAF35
-P 9350 4700
-F 0 "Re1" V 9420 4746 50  0000 L CNN
-F 1 "10k" V 9420 4655 50  0000 C CNN
-F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder" V 9280 4700 50  0001 C CNN
-F 3 "~" H 9350 4700 50  0001 C CNN
-	1    9350 4700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US Rf1
-U 1 1 5F8181B7
-P 9350 5100
-F 0 "Rf1" V 9143 5100 50  0000 C TNN
-F 1 "10k" V 9234 5100 50  0000 C TNN
-F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder" V 9280 5100 50  0001 C CNN
-F 3 "~" H 9350 5100 50  0001 C CNN
-	1    9350 5100
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5F7E2EFB
@@ -156,10 +121,6 @@ Text GLabel 9450 1600 0    50   Input ~ 0
 LoRa_RST
 Text GLabel 9450 1400 0    50   Input ~ 0
 CS_LORA
-Text GLabel 9600 4900 0    50   Input ~ 0
-IMU_INT
-Wire Wire Line
-	9600 5100 9500 5100
 Text Notes 9550 600  0    50   ~ 10
 LoRa Transceiver
 Text Notes 7450 7500 0    50   ~ 0
@@ -524,33 +485,6 @@ NoConn ~ 10450 1400
 NoConn ~ 10450 1500
 NoConn ~ 10450 1600
 NoConn ~ 10450 1700
-$Comp
-L power:GND #PWR016
-U 1 1 6016A2AA
-P 10200 6200
-F 0 "#PWR016" H 10200 5950 50  0001 C CNN
-F 1 "GND" H 10205 6027 50  0000 C BNN
-F 2 "" H 10200 6200 50  0001 C CNN
-F 3 "" H 10200 6200 50  0001 C CNN
-	1    10200 6200
-	1    0    0    -1  
-$EndComp
-Text GLabel 9100 4500 0    50   Input ~ 0
-3V3
-Text GLabel 9550 4700 1    50   Input ~ 0
-IMU_nRST
-Wire Wire Line
-	10800 5500 11050 5500
-Wire Wire Line
-	11050 5500 11050 5600
-Text GLabel 9600 5200 0    50   Input ~ 0
-BL_IND
-Text GLabel 9600 5700 0    50   Input ~ 0
-IMU_ADDR
-Text GLabel 9600 5400 0    50   Input ~ 0
-I2C2_SDA
-Text GLabel 9600 5500 0    50   Input ~ 0
-I2C2_SCL
 Text GLabel 7150 2450 2    50   Input ~ 0
 BB_GPOUT
 Wire Wire Line
@@ -559,120 +493,12 @@ Wire Wire Line
 	7150 2450 6950 2450
 NoConn ~ 10600 3400
 NoConn ~ 10600 3500
-NoConn ~ 10800 4700
-NoConn ~ 10800 5200
 Text Notes 900  2100 0    50   ~ 0
 Radio pushbutton
 Text Notes 850  750  0    50   ~ 0
 Session pushbutton
 Text Notes 850  3500 0    50   ~ 0
 Reset pushbutton
-Wire Wire Line
-	9500 4700 9600 4700
-Wire Wire Line
-	9100 4500 9100 4700
-Wire Wire Line
-	9200 4700 9100 4700
-Connection ~ 9100 4700
-Wire Wire Line
-	9100 4700 9100 5100
-Wire Wire Line
-	9200 5100 9100 5100
-$Comp
-L Device:C C15
-U 1 1 5FAE8D50
-P 9100 6000
-F 0 "C15" H 9352 6000 50  0000 R TNN
-F 1 "0.1uF" H 9261 6000 50  0000 C BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9138 5850 50  0001 C CNN
-F 3 "~" H 9100 6000 50  0001 C CNN
-	1    9100 6000
-	-1   0    0    1   
-$EndComp
-Connection ~ 9100 5100
-$Comp
-L Device:C C16
-U 1 1 5FB1F215
-P 9350 6000
-F 0 "C16" H 9465 6046 50  0000 L CNN
-F 1 "0.12uF" H 9465 5955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_2225_5664Metric_Pad1.80x6.60mm_HandSolder" H 9388 5850 50  0001 C CNN
-F 3 "~" H 9350 6000 50  0001 C CNN
-	1    9350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 5FB1F21B
-P 9600 6000
-F 0 "C17" H 9715 6046 50  0000 L CNN
-F 1 "0.0068uF" H 9715 5955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 9638 5850 50  0001 C CNN
-F 3 "~" H 9600 6000 50  0001 C CNN
-	1    9600 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5FBC6BC2
-P 9050 5600
-F 0 "#PWR013" H 9050 5350 50  0001 C CNN
-F 1 "GND" H 9055 5427 50  0000 C CNN
-F 2 "" H 9050 5600 50  0001 C CNN
-F 3 "" H 9050 5600 50  0001 C CNN
-	1    9050 5600
-	1    0    0    -1  
-$EndComp
-Connection ~ 9350 6150
-Wire Wire Line
-	9350 6150 9600 6150
-Wire Wire Line
-	9100 6150 9350 6150
-Connection ~ 9600 6150
-Wire Wire Line
-	9600 6150 10100 6150
-Wire Wire Line
-	9100 5100 9100 5850
-Wire Wire Line
-	9100 5850 9350 5850
-Connection ~ 9100 5850
-Connection ~ 9350 5850
-Wire Wire Line
-	9350 5850 9600 5850
-Wire Wire Line
-	9100 4500 10100 4500
-Connection ~ 10100 4500
-Wire Wire Line
-	10100 4500 10300 4500
-$Comp
-L final_schematic-rescue:BNO055-Sensor_Motion U4
-U 1 1 5F866A8C
-P 10200 5200
-F 0 "U4" H 10200 6078 50  0000 C TNN
-F 1 "BNO055" H 10200 5987 50  0000 C TNN
-F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 10450 4550 50  0001 L CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 10200 5400 50  0001 C CNN
-	1    10200 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 5900 10100 6150
-Connection ~ 10100 6150
-Wire Wire Line
-	10300 6150 10200 6150
-Wire Wire Line
-	10300 5900 10300 6150
-Wire Wire Line
-	10800 6000 10800 6150
-Wire Wire Line
-	10800 6150 10300 6150
-Connection ~ 10300 6150
-Wire Wire Line
-	11050 5600 11050 6150
-Wire Wire Line
-	11050 6150 10800 6150
-Connection ~ 11050 5600
-Connection ~ 10800 6150
 Wire Wire Line
 	9950 900  9450 900 
 Text GLabel 9200 1700 0    50   Input ~ 0
@@ -1026,8 +852,6 @@ F 3 " ~" H 10750 1100 50  0001 C CNN
 	1    10750 1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 5600 9600 5600
 Text GLabel 7150 2350 2    50   Input ~ 0
 BB_CE
 Wire Wire Line
@@ -1098,7 +922,7 @@ U 1 1 5F9E6C04
 P 7950 1150
 F 0 "J4" H 7978 1126 50  0000 L TNN
 F 1 "OLED Qwiic" H 7978 1035 50  0000 L TNN
-F 2 "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal" H 7950 1150 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 7950 1150 50  0001 C CNN
 F 3 "~" H 7950 1150 50  0001 C CNN
 	1    7950 1150
 	-1   0    0    1   
@@ -1267,11 +1091,6 @@ Connection ~ 9950 2100
 Wire Wire Line
 	10800 3950 10800 4000
 Connection ~ 10800 3950
-Wire Wire Line
-	10200 6150 10200 6200
-Connection ~ 10200 6150
-Wire Wire Line
-	10200 6150 10100 6150
 Wire Wire Line
 	650  5700 650  5750
 Connection ~ 650  5700
@@ -1732,4 +1551,23 @@ Wire Wire Line
 Wire Wire Line
 	2800 1900 2800 1850
 Connection ~ 2800 1850
+Text GLabel 10000 5150 2    50   Input ~ 0
+GND
+Text GLabel 10000 5250 2    50   Input ~ 0
+3V3
+Text GLabel 10000 5350 2    50   Input ~ 0
+I2C2_SDA
+Text GLabel 10000 5450 2    50   Input ~ 0
+I2C2_SCL
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5F9ABE8E
+P 9800 5350
+F 0 "J3" H 9880 5342 50  0000 L CNN
+F 1 "IMU_QWIIC" H 9880 5251 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 9800 5350 50  0001 C CNN
+F 3 "~" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
