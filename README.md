@@ -51,5 +51,5 @@ Schematic and PCB
 - [x] Board silkscreen layer includes a descriptive name to identify the board?
 - [x] Board silkscreen layer includes a revision number and/or last modified date?
 ### 10 Gerber Check
-- [ ] Gerber files have been inspected by a gerber viewer program (e.g. gerbv) to check for any
+- [x] Gerber files have been inspected by a gerber viewer program (e.g. gerbv) to check for any
 last-minute software CAM-processing defects
